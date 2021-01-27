@@ -1,7 +1,26 @@
 function HerculesAir () {}
 
+HerculesAir.midi = {
+  DeckA: {
+    DeckAHotcue1: 0x05,
+    DeckAHotcue2: 0x06,
+    DeckAHotcue3: 0x07,
+    DeckAHotcue4: 0x08
+  },
+  DeckB: {
+    DeckBHotcue1: 0x1b,
+    DeckBHotcue2: 0x1c,
+    DeckBHotcue3: 0x1d,
+    DeckBHotcue4: 0x1e
+  },
+  LEDS: {
+    AllLeds: 0x7f
+  }
+}
+
 // BASICS
-HerculesAir.midiMaster = 0x90;
+HerculesAir.midiStatusNoteOn = 0x90;
+HerculesAir.midiStatusModeChange = 0xB0;
 HerculesAir.falsie = 0x00;
 HerculesAir.truethy = 0x7f;
 HerculesAir.turnOn = HerculesAir.truethy;
@@ -117,67 +136,37 @@ HerculesAir.headMix = function(midino, control, value, status, group) {
   }
 };
 
-HerculesAir.testLED = function() {
-  HerculesAir.sendMidiMsg(i, HerculesAir.turnOn)
-}
-
-
 HerculesAir.resetLEDs = function() {
-  for(var i=1; i<79; i++) {
-    HerculesAir.sendMidiMsg(i, HerculesAir.turnOff)
-  }
+  HerculesAir.sendMidiMsg(HerculesAir.midi.LEDS.AllLeds, HerculesAir.turnOff, HerculesAir.midiStatusModeChange)
 }
 
-HerculesAir.hotcue = function(group, hotcueNum, position) {
-  var affectedHotcue = 'hotcue_' + hotcueNum
+HerculesAir.hotcue = function(midino, control, value, status, group) {
+  if (value === HerculesAir.buttonReleased) {
+    return;
+  }
 
+  var hotcueMap = {
+    0x05: 1,
+    0x1b: 1,
+    0x06: 2,
+    0x1c: 2,
+    0x07: 3,
+    0x1d: 3,
+    0x08: 4,
+    0x1e: 4
+  }
+  var hotcueNum = hotcueMap[control];
+
+  var affectedHotcue = 'hotcue_' + hotcueNum
   var hotcueActivate = affectedHotcue + '_activate';
-  var hotcuePosition = affectedHotcue + '_activate';
   var hotcueClear = affectedHotcue + '_clear';
 
   if(HerculesAir.isShiftButtonPressed) {
     engine.setValue(group, hotcueClear, 1)
   } else {
-    engine.setValue(group, hotcueActivate, 1)
-    engine.setValue(group, hotcuePosition, position)
+    engine.setValue(group, hotcueActivate, 1);
   }
 }
-
-HerculesAir.hotcue1 = function(midino, control, value, status, group) {
-  HerculesAir.hotcue(group, 1, value)
-}
-
-HerculesAir.hotcue2 = function(midino, control, value, status, group) {
-  HerculesAir.hotcue(group, 2, value)
-}
-
-HerculesAir.hotcue3 = function(midino, control, value, status, group) {
-  HerculesAir.hotcue(group, 3, value)
-}
-
-HerculesAir.hotcue4 = function(midino, control, value, status, group) {
-  HerculesAir.hotcue(group, 4, value)
-}
-
-HerculesAir.testLED = function (midino, control, value, status, group) {
-  if (value == HerculesAir.buttonReleased) {
-    return;
-  }
-  print(HerculesAir.testLEDnum);
-  HerculesAir.sendMidiMsg(HerculesAir.testLEDnum++, HerculesAir.turnOn);
-}
-
-// HerculesAir.sampler = function(midino, control, value, status, group) {
-// 	if(value != 0x00) {
-// 		if(HerculesAir.isShiftButtonPressed) {
-// 			engine.setValue(group, "LoadSelectedTrack", 1)
-// 		} else if(engine.getValue(group, "play") == 0) {
-// 			engine.setValue(group, "start_play", 1)
-// 		} else {
-// 			engine.setValue(group, "play", 0)
-// 		}
-// 	}
-// }
 
 HerculesAir.jog = function(midino, control, value, status, group) {
   engine.setValue(
@@ -188,8 +177,8 @@ HerculesAir.jog = function(midino, control, value, status, group) {
 }
 
 HerculesAir.wheelTurn = function(midino, control, value, status, group) {
-  const deckNum = script.deckFromGroup(group);
-  const movementDirection = HerculesAir.getWhellMovementDirection(value);
+  var deckNum = script.deckFromGroup(group);
+  var movementDirection = HerculesAir.getWhellMovementDirection(value);
 
   if (!engine.isScratching(deckNum)) {
     engine.setValue(group, "jog", movementDirection * HerculesAir.wheel_multiplier);
@@ -197,7 +186,7 @@ HerculesAir.wheelTurn = function(midino, control, value, status, group) {
   }
 
   if (HerculesAir.isShiftButtonPressed && HerculesAir.isDeckStopped(group)) {
-    let newPosition = engine.getValue(group, "playposition") + 0.008 * movementDirection
+    var newPosition = engine.getValue(group, "playposition") + 0.008 * movementDirection
     if(newPosition < 0) newPosition = 0;
     if(newPosition > 1) newPosition = 1;
     engine.setValue(group,"playposition",newPosition);
@@ -208,11 +197,11 @@ HerculesAir.wheelTurn = function(midino, control, value, status, group) {
 }
 
 HerculesAir.scratch_enable = function(midino, control, value, status, group) {
-  const deck = script.deckFromGroup(group);
-  const scratchEnable_alpha = 1.0 / 8
-  const scratchEnable_beta = scratchEnable_alpha / 32
-  const scratchEnable_intervalsPerRev = 128
-  const scratchEnable_rpm = 33 + 1/3
+  var deck = script.deckFromGroup(group);
+  var scratchEnable_alpha = 1.0 / 8
+  var scratchEnable_beta = scratchEnable_alpha / 32
+  var scratchEnable_intervalsPerRev = 128
+  var scratchEnable_rpm = 33 + 1/3
 
   if(value == HerculesAir.turnOn) {
     engine.scratchEnable(
@@ -241,6 +230,7 @@ HerculesAir.getWhellMovementDirection = function(value) {
   return value == 0x01 ? 1 : -1
 }
 
-HerculesAir.sendMidiMsg = function(control, value) {
-  midi.sendShortMsg(HerculesAir.midiMaster, control, value)
+HerculesAir.sendMidiMsg = function(control, value, status) {
+  var statusTosend = status === void 1 ? HerculesAir.midiStatusNoteOn : status;
+  midi.sendShortMsg(statusTosend, control, value)
 }
