@@ -1,12 +1,3 @@
-/**
- * Lnks:
- * - https://github.com/mixxxdj/mixxx/wiki
- * - https://github.com/mixxxdj/mixxx/wiki/Components%20JS
- * - https://github.com/mixxxdj/mixxx/wiki/midi%20scripting
- * - https://www.youtube.com/watch?v=QUT8tZmwM00
- * - https://bugs.launchpad.net/mixxx/+bug/706046
- * - https://github.com/mixxxdj/mixxx/blob/main/res/controllers/Hercules-DJ-Control-AIR-scripts.js
- */
 function HerculesAir () {}
 
 // BASICS
