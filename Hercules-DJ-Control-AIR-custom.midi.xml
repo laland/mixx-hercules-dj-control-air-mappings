@@ -129,7 +129,7 @@
                 <status>0xb0</status>
                 <midino>0x32</midino>
                 <group>[Channel1]</group>
-                <key>HerculesAir.scratch</key>
+                <key>HerculesAir.wheelTurn</key>
                 <description>Jog Scratch Deck A</description>
                 <options>
                     <script-binding/>
@@ -422,7 +422,7 @@
                 <status>0xb0</status>
                 <midino>0x33</midino>
                 <group>[Channel2]</group>
-                <key>HerculesAir.scratch</key>
+                <key>HerculesAir.wheelTurn</key>
                 <description>Jog Scratch Deck B</description>
                 <options>
                     <script-binding/>
