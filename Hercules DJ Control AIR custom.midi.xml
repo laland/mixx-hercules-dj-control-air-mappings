@@ -8,6 +8,28 @@
             <file functionprefix="HerculesAir" filename="Hercules-DJ-Control-AIR-custom-scripts.js"/>
         </scriptfiles>
         <controls>
+            <!-- MISC -->
+            <control>
+                <status>0x90</status>
+                <midino>0x32</midino>
+                <group>[Master]</group>
+                <key>HerculesAir.resetLEDs</key>
+                <description>reset LEDS</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x31</midino>
+                <group>[Master]</group>
+                <key>HerculesAir.testLED</key>
+                <description>testLED</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+
             <!-- MASTER -->
             <control>
                 <status>0x90</status>
@@ -27,6 +49,68 @@
                 <description>Head Cue Button</description>
                 <options>
                     <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x3a</midino>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <description>Crossfader</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x2d</midino>
+                <group>[Master]</group>
+                <key>HerculesAir.shift</key>
+                <description>Use Scratch Button as Shift Button</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+
+            <!-- PLAYLIST -->
+            <control>
+                <status>0x90</status>
+                <midino>0x33</midino>
+                <group>[Playlist]</group>
+                <key>SelectPrevTrack</key>
+                <description>Playlist Up</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x34</midino>
+                <group>[Playlist]</group>
+                <key>SelectNextTrack</key>
+                <description>Playlist Down</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x35</midino>
+                <group>[Playlist]</group>
+                <key>SelectNextPlaylist</key>
+                <description>Playlist Files</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x36</midino>
+                <group>[Playlist]</group>
+                <key>SelectPrevPlaylist</key>
+                <description>Playlist Folders</description>
+                <options>
+                    <normal/>
                 </options>
             </control>
 
@@ -91,39 +175,6 @@
                     <normal/>
                 </options>
             </control>
-
-            <!-- CHANNEL 2 -->
-            <control>
-                <status>0xb0</status>
-                <midino>0x31</midino>
-                <group>[Channel2]</group>
-                <key>HerculesAir.jog</key>
-                <description>Jog Wheel Deck B</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x33</midino>
-                <group>[Channel2]</group>
-                <key>HerculesAir.scratch</key>
-                <description>Jog Scratch Deck B</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-
-            <control>
-                <status>0xb0</status>
-                <midino>0x35</midino>
-                <group>[Channel2]</group>
-                <key>rate</key>
-                <description>Pitchslider Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
             <control>
                 <status>0x90</status>
                 <midino>0x4</midino>
@@ -155,26 +206,6 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
-                <midino>0x1b</midino>
-                <group>[Channel2]</group>
-                <key>hotcue_1_activate</key>
-                <description>Hotcue 1 Activate Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x1c</midino>
-                <group>[Channel2]</group>
-                <key>hotcue_2_activate</key>
-                <description>Hotcue 2 Activate Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
                 <status>0xb0</status>
                 <midino>0x38</midino>
                 <group>[Channel1]</group>
@@ -185,41 +216,11 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
-                <midino>0x7</midino>
-                <group>[Sampler3]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler3 Start/Stop Deck B</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
                 <status>0xb0</status>
                 <midino>0x39</midino>
                 <group>[Channel1]</group>
                 <key>filterLow</key>
                 <description>Bass Deck A</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x8</midino>
-                <group>[Sampler4]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler4 Start/Stop Deck B</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x3a</midino>
-                <group>[Master]</group>
-                <key>crossfader</key>
-                <description>Crossfader</description>
                 <options>
                     <normal/>
                 </options>
@@ -235,31 +236,11 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x3b</midino>
-                <group>[Channel2]</group>
-                <key>volume</key>
-                <description>Volume Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
                 <status>0x90</status>
                 <midino>0xa</midino>
                 <group>[Channel1]</group>
                 <key>loop_out</key>
                 <description>End Loop Deck A</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x3c</midino>
-                <group>[Channel2]</group>
-                <key>filterHigh</key>
-                <description>Treble Deck B</description>
                 <options>
                     <normal/>
                 </options>
@@ -275,31 +256,11 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x3d</midino>
-                <group>[Channel2]</group>
-                <key>filterMid</key>
-                <description>Mid Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
                 <status>0x90</status>
                 <midino>0xc</midino>
                 <group>[Channel1]</group>
                 <key>reloop_exit</key>
                 <description>ReLoop Exit Deck A</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x3e</midino>
-                <group>[Channel2]</group>
-                <key>filterLow</key>
-                <description>Bass Deck B</description>
                 <options>
                     <normal/>
                 </options>
@@ -404,6 +365,122 @@
                     <script-binding/>
                 </options>
             </control>
+            <!-- HOTCUES -->
+            <control>
+                <status>0x90</status>
+                <midino>0x1b</midino>
+                <group>[Sampler1]</group>
+                <key>HerculesAir.hotcue1</key>
+                <description>Sampler1 Start/Stop Deck A</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x1c</midino>
+                <group>[Sampler2]</group>
+                <key>HerculesAir.hotcue2</key>
+                <description>Sampler2 Start/Stop Deck A</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x1d</midino>
+                <group>[Sampler3]</group>
+                <key>HerculesAir.hotcue3</key>
+                <description>Sampler3 Start/Stop Deck A</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x1e</midino>
+                <group>[Sampler4]</group>
+                <key>HerculesAir.hotcue4</key>
+                <description>Sampler4 Start/Stop Deck A</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+
+            <!-- CHANNEL 2 -->
+            <control>
+                <status>0xb0</status>
+                <midino>0x31</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.jog</key>
+                <description>Jog Wheel Deck B</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x33</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.scratch</key>
+                <description>Jog Scratch Deck B</description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x35</midino>
+                <group>[Channel2]</group>
+                <key>rate</key>
+                <description>Pitchslider Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x3b</midino>
+                <group>[Channel2]</group>
+                <key>volume</key>
+                <description>Volume Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+
+            <!-- EQ -->
+            <control>
+                <status>0xb0</status>
+                <midino>0x3c</midino>
+                <group>[Channel2]</group>
+                <key>filterHigh</key>
+                <description>Treble Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x3d</midino>
+                <group>[Channel2]</group>
+                <key>filterMid</key>
+                <description>Mid Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x3e</midino>
+                <group>[Channel2]</group>
+                <key>filterLow</key>
+                <description>Bass Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+
             <control>
                 <status>0x90</status>
                 <midino>0x17</midino>
@@ -442,46 +519,6 @@
                 <description>Keylock Deck B</description>
                 <options>
                     <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x1b</midino>
-                <group>[Sampler1]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler1 Start/Stop Deck A</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x1c</midino>
-                <group>[Sampler2]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler2 Start/Stop Deck A</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x1d</midino>
-                <group>[Sampler3]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler3 Start/Stop Deck A</description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x1e</midino>
-                <group>[Sampler4]</group>
-                <key>HerculesAir.sampler</key>
-                <description>Sampler4 Start/Stop Deck A</description>
-                <options>
-                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -624,58 +661,51 @@
                     <script-binding/>
                 </options>
             </control>
+
+            <!-- HOTCUES -->
             <control>
                 <status>0x90</status>
-                <midino>0x2d</midino>
-                <group>[Master]</group>
-                <key>HerculesAir.shift</key>
-                <description>Use Scratch Button as Shift Button</description>
+                <midino>0x1b</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.hotcue1</key>
+                <description>Hotcue 1 Deck B</description>
                 <options>
                     <script-binding/>
                 </options>
             </control>
             <control>
                 <status>0x90</status>
-                <midino>0x33</midino>
-                <group>[Playlist]</group>
-                <key>SelectPrevTrack</key>
-                <description>Playlist Up</description>
+                <midino>0x1c</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.hotcue2</key>
+                <description>Hotcue 2 Deck B</description>
                 <options>
-                    <normal/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
                 <status>0x90</status>
-                <midino>0x34</midino>
-                <group>[Playlist]</group>
-                <key>SelectNextTrack</key>
-                <description>Playlist Down</description>
+                <midino>0x1d</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.hotcue3</key>
+                <description>Hotcue 3 Deck B</description>
                 <options>
-                    <normal/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
                 <status>0x90</status>
-                <midino>0x35</midino>
-                <group>[Playlist]</group>
-                <key>SelectNextPlaylist</key>
-                <description>Playlist Files</description>
+                <midino>0x1e</midino>
+                <group>[Channel2]</group>
+                <key>HerculesAir.hotcue4</key>
+                <description>Hotcue 4 Deck B</description>
                 <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x36</midino>
-                <group>[Playlist]</group>
-                <key>SelectPrevPlaylist</key>
-                <description>Playlist Folders</description>
-                <options>
-                    <normal/>
+                    <script-binding/>
                 </options>
             </control>
         </controls>
         <outputs>
+            <!-- DECK 1 -->
             <output>
                 <group>[Sampler3]</group>
                 <key>play</key>
@@ -691,20 +721,6 @@
                 <off>0x0</off>
             </output>
             <output>
-                <group>[Sampler3]</group>
-                <key>play</key>
-                <description>Sampler 3 LED Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x1d</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
                 <group>[Channel1]</group>
                 <key>beat_active</key>
                 <description>Sync LED Deck A</description>
@@ -715,20 +731,6 @@
                 <maximum>1</maximum>
                 <status>0x0</status>
                 <midino>0x13</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>quantize</key>
-                <description>Quantize Loops/Hot-Cues Deck B LED</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x19</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
             </output>
@@ -761,34 +763,6 @@
                 <off>0x0</off>
             </output>
             <output>
-                <group>[Sampler2]</group>
-                <key>play</key>
-                <description>Sampler 2 LED Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x1c</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>keylock</key>
-                <description>Keylock Deck B LED</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x1a</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
                 <group>[Channel1]</group>
                 <key>flanger</key>
                 <description>FX button LED Deck A</description>
@@ -817,20 +791,6 @@
                 <off>0x0</off>
             </output>
             <output>
-                <group>[Channel2]</group>
-                <key>hotcue_1_activate</key>
-                <description>Hotcue 1 LED Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x1b</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
                 <group>[Channel1]</group>
                 <key>keylock</key>
                 <description>Keylock Deck A LED</description>
@@ -841,20 +801,6 @@
                 <maximum>1</maximum>
                 <status>0x90</status>
                 <midino>0x4</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>flanger</key>
-                <description>FX button LED Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x0</status>
-                <midino>0x17</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
             </output>
@@ -873,34 +819,6 @@
                 <off>0x0</off>
             </output>
             <output>
-                <group>[Channel2]</group>
-                <key>play</key>
-                <description>Play Button LED Deck B</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.5</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x28</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>loop_enabled</key>
-                <description>ReLoop Exit Deck B LED</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x22</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
                 <group>[Channel1]</group>
                 <key>beats_translate_curpos</key>
                 <description>Move Beatgrid to align with current playposition Deck A LED</description>
@@ -911,20 +829,6 @@
                 <maximum>1</maximum>
                 <status>0x90</status>
                 <midino>0x2</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>beats_translate_curpos</key>
-                <description>Move Beatgrid to align with current playposition Deck B LED</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.1</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x18</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
             </output>
@@ -957,20 +861,6 @@
                 <off>0x0</off>
             </output>
             <output>
-                <group>[Channel2]</group>
-                <key>pfl</key>
-                <description>Listen Button Deck B LED</description>
-                <options>
-                    <normal/>
-                </options>
-                <minimum>0.5</minimum>
-                <maximum>1</maximum>
-                <status>0x90</status>
-                <midino>0x2a</midino>
-                <on>0x7f</on>
-                <off>0x0</off>
-            </output>
-            <output>
                 <group>[Channel1]</group>
                 <key>quantize</key>
                 <description>Quantize Loops/Hot-Cues Deck A LED</description>
@@ -998,10 +888,55 @@
                 <on>0x7f</on>
                 <off>0x0</off>
             </output>
+
+            <!-- DECK 2 -->
             <output>
-                <group>[Sampler4]</group>
-                <key>play</key>
-                <description>Sampler 4 LED Deck B</description>
+                <!-- HOTCUES -->
+                <output>
+                    <group>[Channel2]</group>
+                    <key>hotcue_1_enabled</key>
+                    <description>Hotcue 1 LED Deck B</description>
+                    <options>
+                        <normal/>
+                    </options>
+                    <minimum>0.1</minimum>
+                    <maximum>1</maximum>
+                    <status>0x90</status>
+                    <midino>0x1b</midino>
+                    <on>0x7f</on>
+                    <off>0x0</off>
+                </output>
+                <output>
+                    <group>[Channel2]</group>
+                    <key>hotcue_2_enabled</key>
+                    <description>Hotcue 2 LED Deck B</description>
+                    <options>
+                        <normal/>
+                    </options>
+                    <minimum>0.1</minimum>
+                    <maximum>1</maximum>
+                    <status>0x90</status>
+                    <midino>0x1c</midino>
+                    <on>0x7f</on>
+                    <off>0x0</off>
+                </output>
+                <group>[Channel2]</group>
+                <key>hotcue_3_enabled</key>
+                <description>Hotcue 3 LED Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x1d</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_4_enabled</key>
+                <description>Hotcue 4 LED Deck B</description>
                 <options>
                     <normal/>
                 </options>
@@ -1009,6 +944,105 @@
                 <maximum>1</maximum>
                 <status>0x90</status>
                 <midino>0x1e</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <!-- rest -->
+            <output>
+                <group>[Channel2]</group>
+                <key>quantize</key>
+                <description>Quantize Loops/Hot-Cues Deck B LED</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x19</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>keylock</key>
+                <description>Keylock Deck B LED</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x1a</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>flanger</key>
+                <description>FX button LED Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x0</status>
+                <midino>0x17</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>Play Button LED Deck B</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.5</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x28</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>loop_enabled</key>
+                <description>ReLoop Exit Deck B LED</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x22</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>beats_translate_curpos</key>
+                <description>Move Beatgrid to align with current playposition Deck B LED</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.1</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x18</midino>
+                <on>0x7f</on>
+                <off>0x0</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Listen Button Deck B LED</description>
+                <options>
+                    <normal/>
+                </options>
+                <minimum>0.5</minimum>
+                <maximum>1</maximum>
+                <status>0x90</status>
+                <midino>0x2a</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
             </output>
