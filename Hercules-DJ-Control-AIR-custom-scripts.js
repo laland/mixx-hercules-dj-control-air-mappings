@@ -37,12 +37,6 @@ HerculesAir.headCueButtonLed = 58
 HerculesAir.headMinusButtonLed = 59
 HerculesAir.headPlusButtonLed = 60
 
-// MISC
-HerculesAir.beatStepDeckA1 = 0
-HerculesAir.beatStepDeckA2 = 68
-HerculesAir.beatStepDeckB1 = 0
-HerculesAir.beatStepDeckB2 = 76
-
 HerculesAir.isShiftButtonPressed = false
 HerculesAir.wheel_multiplier = 0.9
 HerculesAir.testLEDnum = 0
@@ -58,66 +52,16 @@ HerculesAir.init = function(id) {
   } else {
     HerculesAir.sendMidiMsg(HerculesAir.headCueButtonLed, HerculesAir.turnOn)
   }
-
-  engine.connectControl("[Channel1]", "beat_active", "HerculesAir.beatProgressDeckA")
-  engine.connectControl("[Channel1]", "play", "HerculesAir.playDeckA")
-
-  engine.connectControl("[Channel2]", "beat_active", "HerculesAir.beatProgressDeckB")
-  engine.connectControl("[Channel2]", "play", "HerculesAir.playDeckB")
+  //
+  // engine.connectControl("[Channel1]", "beat_active", "HerculesAir.beatProgressDeckA")
+  // engine.connectControl("[Channel1]", "play", "HerculesAir.playDeckA")
+  //
+  // engine.connectControl("[Channel2]", "beat_active", "HerculesAir.beatProgressDeckB")
+  // engine.connectControl("[Channel2]", "play", "HerculesAir.playDeckB")
 }
 
 HerculesAir.shutdown = function() {
   HerculesAir.resetLEDs()
-}
-
-HerculesAir.playDeckA = function() {
-  if(engine.getValue("[Channel1]", "play") == 0) {
-    HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckA1, HerculesAir.turnOff)
-    HerculesAir.beatStepDeckA1 = 0
-    HerculesAir.beatStepDeckA2 = 68
-  }
-}
-
-HerculesAir.playDeckB = function() {
-  if(engine.getValue("[Channel2]", "play") == 0) {
-    HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckB1, HerculesAir.turnOff)
-    HerculesAir.beatStepDeckB1 = 0
-    HerculesAir.beatStepDeckB2 = 76
-  }
-}
-
-HerculesAir.beatProgressDeckA = function() {
-  if(engine.getValue("[Channel1]", "beat_active") == 1) {
-    if(HerculesAir.beatStepDeckA1 != 0) {
-      HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckA1, HerculesAir.turnOff)
-    }
-
-    HerculesAir.beatStepDeckA1 = HerculesAir.beatStepDeckA2
-
-    HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckA2, HerculesAir.turnOn)
-    if(HerculesAir.beatStepDeckA2 < 71) {
-      HerculesAir.beatStepDeckA2++
-    } else {
-      HerculesAir.beatStepDeckA2 = 68
-    }
-  }
-}
-
-HerculesAir.beatProgressDeckB = function() {
-  if(engine.getValue("[Channel2]", "beat_active") == 1) {
-    if(HerculesAir.beatStepDeckB1 != 0) {
-      HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckB1, HerculesAir.turnOff)
-    }
-
-    HerculesAir.beatStepDeckB1 = HerculesAir.beatStepDeckB2
-
-    HerculesAir.sendMidiMsg(HerculesAir.beatStepDeckB2, HerculesAir.turnOn)
-    if(HerculesAir.beatStepDeckB2 < 79) {
-      HerculesAir.beatStepDeckB2++
-    } else {
-      HerculesAir.beatStepDeckB2 = 76
-    }
-  }
 }
 
 HerculesAir.headCue = function(midino, control, value, status, group) {
