@@ -10,7 +10,7 @@
         <controls>
             <!-- MISC -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x32</midino>
                 <group>[Master]</group>
                 <key>HerculesAir.resetLEDs</key>
@@ -22,7 +22,7 @@
 
             <!-- MASTER -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x39</midino>
                 <group>[Master]</group>
                 <key>HerculesAir.headMix</key>
@@ -32,7 +32,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x3a</midino>
                 <group>[Master]</group>
                 <key>HerculesAir.headCue</key>
@@ -42,7 +42,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x3a</midino>
                 <group>[Master]</group>
                 <key>crossfader</key>
@@ -52,7 +52,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2d</midino>
                 <group>[Master]</group>
                 <key>HerculesAir.shift</key>
@@ -64,7 +64,7 @@
 
             <!-- PLAYLIST -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x33</midino>
                 <group>[Playlist]</group>
                 <key>SelectPrevTrack</key>
@@ -74,7 +74,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x34</midino>
                 <group>[Playlist]</group>
                 <key>SelectNextTrack</key>
@@ -84,7 +84,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x35</midino>
                 <group>[Playlist]</group>
                 <key>SelectNextPlaylist</key>
@@ -94,7 +94,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x36</midino>
                 <group>[Playlist]</group>
                 <key>SelectPrevPlaylist</key>
@@ -106,7 +106,7 @@
 
             <!-- CHANNEL 1  -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2</midino>
                 <group>[Channel1]</group>
                 <key>beats_translate_curpos</key>
@@ -116,7 +116,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x34</midino>
                 <group>[Channel1]</group>
                 <key>rate</key>
@@ -126,7 +126,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x36</midino>
                 <group>[Channel1]</group>
                 <key>volume</key>
@@ -136,7 +136,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x9</midino>
                 <group>[Channel1]</group>
                 <key>loop_in</key>
@@ -146,7 +146,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xa</midino>
                 <group>[Channel1]</group>
                 <key>loop_out</key>
@@ -156,7 +156,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xb</midino>
                 <group>[Channel1]</group>
                 <key>loop_double</key>
@@ -166,7 +166,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xc</midino>
                 <group>[Channel1]</group>
                 <key>reloop_exit</key>
@@ -176,7 +176,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xf</midino>
                 <group>[Channel1]</group>
                 <key>back</key>
@@ -186,7 +186,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x10</midino>
                 <group>[Channel1]</group>
                 <key>fwd</key>
@@ -196,7 +196,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x11</midino>
                 <group>[Channel1]</group>
                 <key>cue_default</key>
@@ -206,7 +206,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x12</midino>
                 <group>[Channel1]</group>
                 <key>play</key>
@@ -216,7 +216,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x13</midino>
                 <group>[Channel1]</group>
                 <key>beatsync</key>
@@ -226,7 +226,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x14</midino>
                 <group>[Channel1]</group>
                 <key>pfl</key>
@@ -236,7 +236,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x15</midino>
                 <group>[Channel1]</group>
                 <key>LoadSelectedTrack</key>
@@ -246,7 +246,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x16</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.scratch_enable</key>
@@ -257,7 +257,7 @@
             </control>
             <!-- JOG, SCRATCH -->
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x30</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.jog</key>
@@ -267,7 +267,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x32</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.wheelTurn</key>
@@ -278,7 +278,7 @@
             </control>
             <!-- EQ -->
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x37</midino>
                 <group>[Channel1]</group>
                 <key>filterHigh</key>
@@ -288,7 +288,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x38</midino>
                 <group>[Channel1]</group>
                 <key>filterMid</key>
@@ -298,7 +298,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x39</midino>
                 <group>[Channel1]</group>
                 <key>filterLow</key>
@@ -309,7 +309,7 @@
             </control>
             <!-- QUANTIZE, KEYLOCK -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xd</midino>
                 <group>[Channel1]</group>
                 <key>quantize</key>
@@ -319,7 +319,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xe</midino>
                 <group>[Channel1]</group>
                 <key>keylock</key>
@@ -330,7 +330,7 @@
             </control>
             <!-- HOTCUES -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x05</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.hotcue</key>
@@ -340,7 +340,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x06</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.hotcue</key>
@@ -350,7 +350,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x07</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.hotcue</key>
@@ -360,7 +360,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x08</midino>
                 <group>[Channel1]</group>
                 <key>HerculesAir.hotcue</key>
@@ -372,7 +372,7 @@
 
             <!-- CHANNEL 2 -->
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x35</midino>
                 <group>[Channel2]</group>
                 <key>rate</key>
@@ -382,7 +382,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x3b</midino>
                 <group>[Channel2]</group>
                 <key>volume</key>
@@ -392,7 +392,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x18</midino>
                 <group>[Channel2]</group>
                 <key>beats_translate_curpos</key>
@@ -402,7 +402,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1f</midino>
                 <group>[Channel2]</group>
                 <key>loop_in</key>
@@ -412,7 +412,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x20</midino>
                 <group>[Channel2]</group>
                 <key>loop_out</key>
@@ -422,7 +422,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x21</midino>
                 <group>[Channel2]</group>
                 <key>loop_double</key>
@@ -432,7 +432,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x22</midino>
                 <group>[Channel2]</group>
                 <key>reloop_exit</key>
@@ -442,7 +442,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x25</midino>
                 <group>[Channel2]</group>
                 <key>back</key>
@@ -452,7 +452,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x26</midino>
                 <group>[Channel2]</group>
                 <key>fwd</key>
@@ -462,7 +462,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x27</midino>
                 <group>[Channel2]</group>
                 <key>cue_default</key>
@@ -472,7 +472,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x28</midino>
                 <group>[Channel2]</group>
                 <key>play</key>
@@ -482,7 +482,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x29</midino>
                 <group>[Channel2]</group>
                 <key>beatsync</key>
@@ -492,7 +492,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2a</midino>
                 <group>[Channel2]</group>
                 <key>pfl</key>
@@ -502,7 +502,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2b</midino>
                 <group>[Channel2]</group>
                 <key>LoadSelectedTrack</key>
@@ -512,7 +512,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2c</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.scratch_enable</key>
@@ -523,7 +523,7 @@
             </control>
             <!-- JOG, SCRATCH -->
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x31</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.jog</key>
@@ -533,7 +533,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x33</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.wheelTurn</key>
@@ -544,7 +544,7 @@
             </control>
             <!-- EQ -->
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x3c</midino>
                 <group>[Channel2]</group>
                 <key>filterHigh</key>
@@ -554,7 +554,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x3d</midino>
                 <group>[Channel2]</group>
                 <key>filterMid</key>
@@ -564,7 +564,7 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
+                <status>0xb1</status>
                 <midino>0x3e</midino>
                 <group>[Channel2]</group>
                 <key>filterLow</key>
@@ -575,7 +575,7 @@
             </control>
             <!-- QUANTIZE, KEYLOCK -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x23</midino>
                 <group>[Channel2]</group>
                 <key>quantize</key>
@@ -585,7 +585,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x24</midino>
                 <group>[Channel2]</group>
                 <key>keylock</key>
@@ -596,7 +596,7 @@
             </control>
             <!-- HOTCUES -->
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1b</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.hotcue</key>
@@ -606,7 +606,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1c</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.hotcue</key>
@@ -616,7 +616,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1d</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.hotcue</key>
@@ -626,7 +626,7 @@
                 </options>
             </control>
             <control>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1e</midino>
                 <group>[Channel2]</group>
                 <key>HerculesAir.hotcue</key>
@@ -661,7 +661,7 @@
                 </options>
                 <minimum>0.5</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x14</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -675,7 +675,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x4</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -689,7 +689,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0xc</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -703,7 +703,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -717,7 +717,7 @@
                 </options>
                 <minimum>0.5</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x12</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -731,7 +731,7 @@
                 </options>
                 <minimum>0</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x44</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -745,7 +745,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x45</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -760,7 +760,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x05</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -774,7 +774,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x06</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -788,7 +788,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x07</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -802,7 +802,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x08</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -819,7 +819,7 @@
                 </options>
                 <minimum>0.5</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x28</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -833,7 +833,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x22</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -847,7 +847,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x18</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -861,7 +861,7 @@
                 </options>
                 <minimum>0.5</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x2a</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -876,7 +876,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x4c</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -890,7 +890,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x4d</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -905,7 +905,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1b</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -919,7 +919,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1c</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -933,7 +933,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1d</midino>
                 <on>0x7f</on>
                 <off>0x0</off>
@@ -947,7 +947,7 @@
                 </options>
                 <minimum>0.1</minimum>
                 <maximum>1</maximum>
-                <status>0x90</status>
+                <status>0x91</status>
                 <midino>0x1e</midino>
                 <on>0x7f</on>
                 <off>0x0</off>

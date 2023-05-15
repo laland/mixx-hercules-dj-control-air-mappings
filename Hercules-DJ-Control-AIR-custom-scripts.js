@@ -19,8 +19,8 @@ HerculesAir.midi = {
 }
 
 // BASICS
-HerculesAir.midiStatusNoteOn = 0x90;
-HerculesAir.midiStatusModeChange = 0xB0;
+HerculesAir.midiStatusNoteOn = 0x91;
+HerculesAir.midiStatusModeChange = 0xB1;
 HerculesAir.falsie = 0x00;
 HerculesAir.truethy = 0x7f;
 HerculesAir.turnOn = HerculesAir.truethy;
